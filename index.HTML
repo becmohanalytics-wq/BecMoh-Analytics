@@ -571,18 +571,18 @@
         }
 
         .team-img-wrapper {
-            height: 320px;
-            overflow: hidden;
-            background: #e2e8f0;
-        }
+    height: 400px; /* Increased height to give breathing room */
+    overflow: hidden;
+    background: #e2e8f0;
+}
 
-        .team-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top center;
-            transition: var(--transition);
-        }
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%; /* Ensures top of head and face are nicely framed */
+    transition: var(--transition);
+}
 
         .team-card:hover .team-img-wrapper img {
             transform: scale(1.03);
